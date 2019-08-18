@@ -11,6 +11,7 @@ UserID, Create_Time : Primary Key
 Latitude, Longitude, Sent_Score (polarity score of tweets), Sent_Status (polarity, e.g. 'positive', 'negative' or 'neutral'), and Text
 
 ### twitter-given-lat-long.ipynb
+
 Retrive tweets (streaming), analyzing tweets and send to DynamoDB
 
 ## Python implementation
@@ -23,3 +24,9 @@ To set up dynamodb table:
 - Run it: ```setup-dynamo-db-table.py```
 
 
+### twitter-client-new-zeland.py
+
+To collect tweets from streaming api for New Zeland:
+- Make sure that you have all necessary libraries (see what you need in include section of the script)
+- Check the name of the table (line 25)
+- Run python script: `twitter-client-new-zeland.py`
